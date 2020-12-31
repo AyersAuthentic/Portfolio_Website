@@ -23,22 +23,22 @@
       padding-bottom: 5rem;
     }
 
-    &__image {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
+    // &__image {
+    //   display: flex;
+    //   height: 100%;
+    //   align-items: center;
+    //   justify-content: center;
 
-      @include respond(tab-port) {
-        padding-bottom: 6.4rem;
-      }
-      @include respond(tab-land) {
-        height: 100%;
-      }
-    }
+    //   @include respond(tab-port) {
+    //     padding-bottom: 6.4rem;
+    //   }
+    //   @include respond(tab-land) {
+    //     height: 100%;
+    //   }
+    // }
 
     &__info {
-      display: flex;
+      display: inline;
       height: 100%;
       justify-content: center;
       flex-direction: column;
@@ -48,7 +48,7 @@
       }
 
       &-text {
-        text-align: left;
+        text-align: center;
 
         @include respond(tab-port) {
           font-size: 1.5rem;
@@ -78,4 +78,10 @@
       }
     }
   }
+}
+
+.resume-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }

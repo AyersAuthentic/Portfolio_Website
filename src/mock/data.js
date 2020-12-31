@@ -9,10 +9,10 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'Data Magician, Full-Stack Engineer, Problem Solver',
+  name: 'Kevin Ayers',
+  subtitle: 'I build awesome things and solve hard problems.',
+  cta: 'Say Hello',
 };
 
 // ABOUT DATA
@@ -28,8 +28,8 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'yelp2.png',
+    title: 'YelpCamp',
     info: '',
     info2: '',
     url: '',
@@ -37,8 +37,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'smart2.png',
+    title: 'Smart Brain',
     info: '',
     info2: '',
     url: '',
@@ -46,8 +46,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'shop.png',
+    title: 'Shop',
     info: '',
     info2: '',
     url: '',

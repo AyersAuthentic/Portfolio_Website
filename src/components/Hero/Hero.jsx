@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import avatar from '../../images/avatar.png';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -27,10 +28,11 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
           </h1>
+          <h2>
+            {subtitle || "I'm the Unknown Developer."}
+          </h2>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
@@ -39,6 +41,11 @@ const Header = () => {
                 {cta || 'Know more'}
               </Link>
             </span>
+          </p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <p className="">
+            <img src={avatar} alt="boohoo" className="avatar"/>
           </p>
         </Fade>
       </Container>
